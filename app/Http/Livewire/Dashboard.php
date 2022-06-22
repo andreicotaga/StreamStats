@@ -4,7 +4,7 @@ namespace App\Http\Livewire;
 
 use App\Jobs\ImportTwitchStreamsUserIsFollowingJob;
 use App\Models\User;
-use Auth;
+use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
 
 class Dashboard extends Component
