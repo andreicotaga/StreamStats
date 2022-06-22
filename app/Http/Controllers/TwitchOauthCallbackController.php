@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
-use Auth;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 use Laravel\Socialite\Facades\Socialite;
 
@@ -32,6 +32,8 @@ class TwitchOauthCallbackController extends Controller
         }
 
         Auth::login($user);
+
+        var_dump($user); die;
 
         return redirect()->route('dashboard');
     }
