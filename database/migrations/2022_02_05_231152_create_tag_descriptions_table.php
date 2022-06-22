@@ -11,7 +11,7 @@ class CreateTagDescriptionsTable extends Migration
         Schema::create('tag_descriptions', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->foreignId('tag_id')->constrained('tags')->cascadeOnDelete();
-            $table->string('localization')->index();
+            $table->string('localization');
             $table->string('localization_name');
             $table->string('localization_descriptions');
 
