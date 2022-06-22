@@ -31,7 +31,7 @@ class TwitchOauthCallbackController extends Controller
             ]);
         }
 
-        if (Auth::attempt([$user->email, $user->password])) {
+        if (Auth::attempt(['email' => $user->email, 'password' => $user->password])) {
             // Authentication passed...
             return redirect()->intended('dashboard');
         }
