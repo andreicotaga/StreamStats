@@ -31,7 +31,7 @@ class TwitchOauthCallbackController extends Controller
             ]);
         }
 
-        Auth::login($user);
+        Auth::attempt($user);
 
         return redirect()->route('dashboard');
     }
