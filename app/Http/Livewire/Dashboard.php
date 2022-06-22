@@ -13,7 +13,7 @@ class Dashboard extends Component
 
     public function mount(): void
     {
-        $this->user = Auth::user()->load('followedStreams');
+        $this->user = auth()->user()->load('followedStreams');
     }
 
     public function updateFollowedStreams()
