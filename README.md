@@ -12,6 +12,8 @@ Simple web application using Oauth through Twitch for showing user's streaming f
 
 ## Print Screens
 
+![alt text](screenshots/img.png)
+
 ![alt text](screenshots/landing.png)
 
 ![alt text](screenshots/img1.png)
